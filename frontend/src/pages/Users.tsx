@@ -36,7 +36,11 @@ export default function Users() {
       });
   }
 
-  useEffect(() => { fetchUsers(); }, []);
+  useEffect(() => {
+    const load = () => fetchUsers();
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function handleSearch() { fetchUsers(1); }
 

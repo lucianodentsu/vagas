@@ -41,7 +41,11 @@ export default function Products() {
       });
   }
 
-  useEffect(() => { fetchProducts(); }, []);
+  useEffect(() => {
+    const load = () => fetchProducts();
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   function openCreate() {
     setForm(emptyForm);

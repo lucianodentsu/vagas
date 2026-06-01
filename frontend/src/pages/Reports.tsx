@@ -38,7 +38,10 @@ export default function Reports() {
       });
   }
 
-  useEffect(() => { fetchReports(); }, []);
+  useEffect(() => {
+    const load = () => fetchReports();
+    load();
+  }, []);
 
   async function handleCreate(e: FormEvent) {
     e.preventDefault();
