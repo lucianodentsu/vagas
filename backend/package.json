@@ -1,7 +1,7 @@
 {
-  "name": "novoprojeto-backend",
+  "name": "dentsucapacitycontrol-backend",
   "version": "1.0.0",
-  "description": "Backend API - Sistema Completo",
+  "description": "Backend API - DentsuCapacityControl",
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",

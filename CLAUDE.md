@@ -2,7 +2,7 @@
 
 ## Projeto
 
-Painel administrativo full-stack. Nome do repo: `vagas`. Roda via Docker Compose.
+DentsuCapacityControl -- painel administrativo full-stack. Repo: `vagas`. Roda via Docker Compose.
 
 ## Como rodar
 

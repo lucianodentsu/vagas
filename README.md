@@ -1,6 +1,6 @@
-# Sistema - Painel Administrativo
+# DentsuCapacityControl
 
-Full-stack admin panel com React, Node.js, PostgreSQL e Docker.
+Painel administrativo full-stack com React, Node.js, PostgreSQL e Docker.
 
 ## Stack
 

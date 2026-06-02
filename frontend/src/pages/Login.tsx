@@ -35,10 +35,10 @@ export default function Login() {
       <div className="relative w-full max-w-[420px] mx-6 animate-slide-up">
         <div className="text-center mb-10">
           <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center mx-auto mb-5">
-            <span className="text-surface-950 text-xl font-bold">S</span>
+            <span className="text-surface-950 text-xl font-bold">D</span>
           </div>
           <h1 className="text-[28px] font-semibold text-white tracking-tight">
-            Bem-vindo de volta
+            DentsuCapacityControl
           </h1>
           <p className="text-surface-500 text-sm mt-2">Acesse o painel administrativo</p>
         </div>

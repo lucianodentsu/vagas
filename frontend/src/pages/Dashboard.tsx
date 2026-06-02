@@ -78,7 +78,7 @@ export default function Dashboard() {
     <div className="animate-fade-in">
       <div className="mb-8">
         <h2 className="text-headline text-surface-900">Dashboard</h2>
-        <p className="text-body text-surface-400 mt-1">Visao geral do sistema</p>
+        <p className="text-body text-surface-400 mt-1">Visao geral</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">

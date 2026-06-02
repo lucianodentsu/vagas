@@ -1,12 +1,12 @@
 services:
   db:
     image: postgres:16-alpine
-    container_name: novoprojeto-db
+    container_name: dentsucapacitycontrol-db
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${DB_USER:-admin}
       POSTGRES_PASSWORD: ${DB_PASSWORD:-admin123}
-      POSTGRES_DB: ${DB_NAME:-novoprojeto}
+      POSTGRES_DB: ${DB_NAME:-dentsucapacitycontrol}
     ports:
       - '5432:5432'
     volumes:
@@ -21,10 +21,10 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: novoprojeto-backend
+    container_name: dentsucapacitycontrol-backend
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql://${DB_USER:-admin}:${DB_PASSWORD:-admin123}@db:5432/${DB_NAME:-novoprojeto}?schema=public
+      DATABASE_URL: postgresql://${DB_USER:-admin}:${DB_PASSWORD:-admin123}@db:5432/${DB_NAME:-dentsucapacitycontrol}?schema=public
       JWT_SECRET: ${JWT_SECRET:-supersecretkey_change_me_in_production}
       PORT: 3001
       NODE_ENV: ${NODE_ENV:-development}
@@ -41,7 +41,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: novoprojeto-frontend
+    container_name: dentsucapacitycontrol-frontend
     restart: unless-stopped
     ports:
       - '3000:80'
@@ -50,7 +50,7 @@ services:
 
   nginx:
     image: nginx:alpine
-    container_name: novoprojeto-nginx
+    container_name: dentsucapacitycontrol-nginx
     restart: unless-stopped
     ports:
       - '9090:80'

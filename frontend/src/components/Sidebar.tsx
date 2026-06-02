@@ -17,9 +17,9 @@ export default function Sidebar() {
       <div className="px-7 pt-8 pb-6">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
-            <span className="text-surface-950 text-sm font-bold">S</span>
+            <span className="text-surface-950 text-sm font-bold">D</span>
           </div>
-          <span className="text-white text-[15px] font-semibold tracking-tight">Sistema</span>
+          <span className="text-white text-[15px] font-semibold tracking-tight">DentsuCC</span>
         </div>
       </div>
 
